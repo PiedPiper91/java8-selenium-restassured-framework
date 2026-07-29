@@ -1,12 +1,12 @@
-package EMS;
+package com.automation.ems;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Objects;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class EmployeeOperations implements EmployeeOperationsManager {
+public class EmployeeOperationsImpl implements EmployeeOperations {
     @Override
     public List<Employee> addEmployee(List<Employee> employeeList,Employee e) {
         employeeList.add(e);
@@ -15,46 +15,41 @@ public class EmployeeOperations implements EmployeeOperationsManager {
 
     @Override
     public List<Employee> removeEmployee(List<Employee> employeeList,String employeeId) {
-        Employee e = employeeList.get(Integer.parseInt(employeeId)-1);
-        employeeList.remove(e);
+        employeeList.removeIf(employee -> employee.getId().equals(employeeId));
         return employeeList;
     }
 
     @Override
     public boolean searchEmployee(List<Employee> employeeList,String employeeId) {
-        Employee e = employeeList.get(Integer.parseInt(employeeId)-1);
-        return employeeList.contains(e);
+        return employeeList.stream().anyMatch(employee -> employee.getId().equals(employeeId));
     }
 
     @Override
     public double highestSalary(List<Employee> employeeList) {
-        return employeeList.stream().mapToDouble(Employee::getSalary).max().getAsDouble();
+        return employeeList.stream().mapToDouble(Employee::getSalary).max().orElse(0.0);
     }
 
     @Override
     public double averageSalary(List<Employee> employeeList) {
-        return employeeList.stream().mapToDouble(Employee::getSalary).average().getAsDouble();
-
+        return employeeList.stream().mapToDouble(Employee::getSalary).average().orElse(0.0);
     }
 
     //TODO
     @Override
-    public List<Employee> groupByDepartment(List<Employee> employeeList) {
-        return List.of();
+    public Map<String, List<Employee>> groupByDepartment(List<Employee> employeeList) {
+        return Collectors.groupingBy(groupByDepartment(employeeList),Collectors.toMap());
     }
 
     @Override
     public List<Employee> sortBySalaryDesc(List<Employee> employeeList) {
         Comparator<Employee> byEmployeeSalary = Comparator.comparing(Employee::getSalary).reversed();
-        employeeList.sort(byEmployeeSalary);
-        return employeeList;
+        return employeeList.stream().sorted(byEmployeeSalary).collect(Collectors.toList());
     }
 
     @Override
     public List<Employee> sortByNameAsc(List<Employee> employeeList) {
         Comparator<Employee> byEmployeeName = Comparator.comparing(Employee::getName);
-        employeeList.sort(byEmployeeName);
-        return employeeList;
+        return employeeList.stream().sorted(byEmployeeName).collect(Collectors.toList());
     }
 
     //TODO
@@ -64,7 +59,7 @@ public class EmployeeOperations implements EmployeeOperationsManager {
     }
 
     @Override
-    public double employeeCount(List<Employee> employeeList) {
+    public long employeeCount(List<Employee> employeeList) {
         return employeeList.stream().count();
     }
 

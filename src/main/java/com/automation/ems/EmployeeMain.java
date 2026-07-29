@@ -1,4 +1,4 @@
-package EMS;
+package com.automation.ems;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class EmployeeMain {
         employeeList.add(new Employee("4","User4","Engg", 70000.0));
         employeeList.add(new Employee("5","User5","HR", 60000.0));
         employeeList.add(new Employee("6","User6","Management", 40000.0));
-        EmployeeOperations employeeOperations = new EmployeeOperations();
+        EmployeeOperationsImpl employeeOperations = new EmployeeOperationsImpl();
         employeeOperations.addEmployee(employeeList, new Employee("7","User7","Engg",50000.0));
         employeeOperations.removeEmployee(employeeList,"2");
         System.out.println("-------------------------------------------");

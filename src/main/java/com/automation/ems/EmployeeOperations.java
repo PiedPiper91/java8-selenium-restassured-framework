@@ -1,4 +1,4 @@
-package EMS;
+package com.automation.ems;
 //Implement the Employee Management System using Java 8 Streams for all querying, filtering, sorting, and aggregation operations.
 //Focus on clean object-oriented design rather than squeezing everything into a main() method.
 
@@ -6,7 +6,7 @@ package EMS;
 import java.util.List;
 import java.util.Set;
 
-public interface EmployeeOperationsManager {
+public interface EmployeeOperations {
     public List<Employee> addEmployee(List<Employee> employeelist, Employee e);
 
     public List<Employee> removeEmployee(List<Employee> employeelist,String employeeId);
@@ -25,7 +25,7 @@ public interface EmployeeOperationsManager {
 
     public Set<String> duplicateNames(List<Employee> employeeList);
 
-    public double employeeCount(List<Employee> employeelist);
+    public long employeeCount(List<Employee> employeelist);
 
     public List<Employee> highEarningEmployees(List<Employee> employeelist);
 }

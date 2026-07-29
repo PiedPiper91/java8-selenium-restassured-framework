@@ -1,12 +1,12 @@
-package EMS;
+package com.automation.lms;
 
-public class Employee {
+public class Util {
     private String id;
     private String name;
     private String department;
     private double salary;
 
-    Employee(String id,String name, String department, Double salary){
+    public Util(String id, String name, String department, Double salary){
         this.id = id;
         this.name = name;
         this.department = department;
@@ -15,7 +15,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return " Id:"+id+" name:"+name+" department:"+department+" salary:"+salary;
+        return " Id="+id+", name="+name+", department="+department+", salary="+salary;
     }
 
     public String getId() {
@@ -32,10 +32,6 @@ public class Employee {
 
     public double getSalary() {
         return salary;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public void setName(String name) {

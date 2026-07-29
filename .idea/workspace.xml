@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="caae6dad-1825-43d6-ae61-06f58a21c5c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EMS/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/ems/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EMS/EmployeeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/ems/EmployeeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EMS/EmployeeOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/ems/EmployeeOperationsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EMS/EmployeeOperationsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/ems/EmployeeOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/arya_bhattacharya/Downloads/AutomationProjectsWorkspace/java8-selenium-restassured-framework" value="3GJCpxF6glQFzAj3rNOMiCLcQt9" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3GJCpxF6glQFzAj3rNOMiCLcQt9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EmployeeMain.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/arya_bhattacharya/Downloads/AutomationProjectsWorkspace/java8-selenium-restassured-framework/src/main/java/com/automation/lms&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/arya_bhattacharya/Downloads/AutomationProjectsWorkspace/java8-selenium-restassured-framework/src/main/java/org/example/Main.java&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arya_bhattacharya\Downloads\AutomationProjectsWorkspace\java8-selenium-restassured-framework\src\main\java\com\automation\lms" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.automation.lms" />
+      <recent name="EMS" />
+      <recent name="employeemanagemenysystem" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="EmployeeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EMS.EmployeeMain" />
+      <module name="java8-selenium-restassured-framework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EmployeeMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="caae6dad-1825-43d6-ae61-06f58a21c5c1" name="Changes" comment="" />
+      <created>1783680474836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783680474836</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
