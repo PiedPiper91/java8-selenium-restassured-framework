@@ -2,6 +2,7 @@ package com.automation.lms;
 
 import java.lang.Exception;
 import java.util.List;
+import java.util.Map;
 
 public interface LibraryOperations {
     public List<Book> addBook(List<Book> bookList, Book newbook) throws Exception;
@@ -39,6 +40,12 @@ public interface LibraryOperations {
     public List<Book> sortByPrice(List<Book> bookList);
 
     public List<Book> sortByPublicationYear(List<Book> bookList);
+
+    Map<String, List<Book>> groupByGenre(List<Book> bookList);
+
+    Map<String, List<Book>> groupByAuthor(List<Book> bookList);
+
+    Map<String, Long> countPerGenre(List<Book> bookList);
 
 //    Group books by genre - Map<String, List<Book>>
 //    Group books by author - Map<String, List<Book>>

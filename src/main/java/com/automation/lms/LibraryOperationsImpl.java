@@ -1,15 +1,10 @@
 package com.automation.lms;
 
-import com.automation.ems.Employee;
-
 import java.lang.Exception;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
-
-import static java.util.stream.Collectors.mapping;
 
 public class LibraryOperationsImpl implements LibraryOperations {
     @Override
@@ -117,7 +112,17 @@ public class LibraryOperationsImpl implements LibraryOperations {
 
     @Override
     public Map<String, List<Book>> groupByGenre(List<Book> bookList) {
-        return Collectors.groupingBy(Book::getGenre,mapping(Book::getGenre,toList()));
+        return bookList.stream().collect(Collectors.groupingBy(Book::getGenre));
+    }
+
+    @Override
+    public Map<String, List<Book>> groupByAuthor(List<Book> bookList) {
+        return bookList.stream().collect(Collectors.groupingBy(Book::getAuthor));
+    }
+
+    @Override
+    public Map<String, Long> countPerGenre(List<Book> bookList) {
+        return bookList.stream().collect(Collectors.groupingBy(Book::getGenre, Collectors.counting()));
     }
 
 }
