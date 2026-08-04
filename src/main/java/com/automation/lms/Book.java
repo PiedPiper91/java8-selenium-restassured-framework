@@ -71,14 +71,20 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Book book = (Book) o;
-        return Objects.equals(title, book.title);
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+
+        if (obj == null || getClass() != obj.getClass())
+            return false;
+
+        Book other = (Book) obj;
+
+        return Objects.equals(bookId, other.bookId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(title);
+        return Objects.hash(bookId);
     }
 }

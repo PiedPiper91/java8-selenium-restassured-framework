@@ -1,13 +1,13 @@
 package com.automation.lms;
 
-import java.lang.Exception;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public interface LibraryOperations {
-    public List<Book> addBook(List<Book> bookList, Book newbook) throws Exception;
+    public List<Book> addBook(List<Book> bookList, Book newbook) throws DuplicateBookException;
 
-    public List<Book> removeBook(List<Book> bookList, String bookId);
+    public List<Book> removeBook(List<Book> bookList, String bookId) throws BookNotFoundException;
 
     public boolean searchById(List<Book> bookList, String id);
 
@@ -19,17 +19,17 @@ public interface LibraryOperations {
 
     public Book updateBookPrice(Book book, Double price);
 
-    public int borrowBook(Book book);
+    public int borrowBook(Book book) throws BookNotAvailableException;
 
     public int returnBook(Book book);
 
     public long totalBooks(List<Book> bookList);
 
-    public double averagePrice(List<Book> bookList);
+    public Optional<Book> averagePrice(List<Book> bookList);
 
-    public double mostExpensiveBook(List<Book> bookList);
+    public Optional<Book> mostExpensiveBook(List<Book> bookList);
 
-    public double cheapestBook(List<Book> bookList);
+    public Optional<Book> cheapestBook(List<Book> bookList);
 
     public List<Book> booksPublishedAfter2015(List<Book> bookList);
 

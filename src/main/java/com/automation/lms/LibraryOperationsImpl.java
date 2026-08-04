@@ -1,26 +1,33 @@
 package com.automation.lms;
 
-import java.lang.Exception;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class LibraryOperationsImpl implements LibraryOperations {
     @Override
-    public List<Book> addBook(List<Book> bookList, Book newbook) throws Exception {
+    public List<Book> addBook(List<Book> bookList, Book newbook) throws DuplicateBookException {
         if(bookList.stream().noneMatch(book -> book.getBookId().equals(newbook.getBookId())))
         {
             bookList.add(newbook);
         }
         else
-            throw new Exception("Duplicate book is present");
+            throw new DuplicateBookException("Duplicate book is present");
         return bookList;
     }
 
     @Override
-    public List<Book> removeBook(List<Book> bookList, String bookId) {
-        bookList.removeIf(book -> book.getBookId().equals(bookId));
+    public List<Book> removeBook(List<Book> bookList, String bookId) throws BookNotFoundException {
+        boolean removed =
+                bookList.removeIf(
+                        book ->
+                                book.getBookId().equals(bookId));
+
+        if(!removed){
+            throw new BookNotFoundException("Book not found");
+        }
         return bookList;
     }
 
@@ -51,8 +58,13 @@ public class LibraryOperationsImpl implements LibraryOperations {
     }
 
     @Override
-    public int borrowBook(Book book) {
-        book.setAvailableCopies(book.getAvailableCopies()-1);
+    public int borrowBook(Book book) throws BookNotAvailableException {
+        if(book.getAvailableCopies()==0){
+            throw new BookNotAvailableException(
+                    "Book unavailable");
+        }
+        book.setAvailableCopies(
+                book.getAvailableCopies()-1);
         return book.getAvailableCopies();
     }
 
@@ -73,13 +85,13 @@ public class LibraryOperationsImpl implements LibraryOperations {
     }
 
     @Override
-    public double mostExpensiveBook(List<Book> bookList) {
-        return bookList.stream().mapToDouble(Book::getPrice).max().orElse(0.0);
+    public Optional<Book> mostExpensiveBook(List<Book> bookList) {
+        return bookList.stream().max(Comparator.comparing(Book::getPrice));
     }
 
     @Override
-    public double cheapestBook(List<Book> bookList) {
-        return bookList.stream().mapToDouble(Book::getPrice).min().orElse(0.0);
+    public Optional<Book> cheapestBook(List<Book> bookList) {
+        return bookList.stream().min(Comparator.comparing(Book::getPrice));
     }
 
     @Override
