@@ -25,7 +25,7 @@ public interface LibraryOperations {
 
     public long totalBooks(List<Book> bookList);
 
-    public Optional<Book> averagePrice(List<Book> bookList);
+    public double averagePrice(List<Book> bookList);
 
     public Optional<Book> mostExpensiveBook(List<Book> bookList);
 

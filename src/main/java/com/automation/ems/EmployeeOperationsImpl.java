@@ -34,12 +34,6 @@ public class EmployeeOperationsImpl implements EmployeeOperations {
         return employeeList.stream().mapToDouble(Employee::getSalary).average().orElse(0.0);
     }
 
-    //TODO
-    @Override
-    public Map<String, List<Employee>> groupByDepartment(List<Employee> employeeList) {
-        return Collectors.groupingBy(groupByDepartment(employeeList),Collectors.toMap());
-    }
-
     @Override
     public List<Employee> sortBySalaryDesc(List<Employee> employeeList) {
         Comparator<Employee> byEmployeeSalary = Comparator.comparing(Employee::getSalary).reversed();

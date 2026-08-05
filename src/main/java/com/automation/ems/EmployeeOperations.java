@@ -17,8 +17,6 @@ public interface EmployeeOperations {
 
     public double averageSalary(List<Employee> employeelist);
 
-    public List<Employee> groupByDepartment(List<Employee> employeeList);
-
     public List<Employee> sortBySalaryDesc(List<Employee> employeeList);
 
     public List<Employee> sortByNameAsc(List<Employee> employeeList);
