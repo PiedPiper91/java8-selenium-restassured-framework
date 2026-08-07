@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caae6dad-1825-43d6-ae61-06f58a21c5c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/ConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/ConfigurationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/TestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testdata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestDataRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/ems/EmployeeOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/ems/EmployeeOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/ems/EmployeeOperationsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/ems/EmployeeOperationsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/lms/BookMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/lms/BookMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/automation/lms/LibraryOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/automation/lms/LibraryOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BaseTest.executor": "Run",
     "Application.EmployeeMain.executor": "Run",
+    "Application.TestDataRunner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -74,13 +72,14 @@
       <recent name="C:\Users\AryaBhattacharya\IdeaProjects\java8-selenium-restassured-framework\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="models" />
       <recent name="exceptions" />
       <recent name="com.automation.lms" />
       <recent name="EMS" />
       <recent name="employeemanagemenysystem" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BaseTest">
+  <component name="RunManager" selected="Application.TestDataRunner">
     <configuration name="BaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="base.BaseTest" />
       <module name="java8-selenium-restassured-framework" />
@@ -101,8 +100,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestDataRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestDataRunner" />
+      <module name="java8-selenium-restassured-framework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestDataRunner" />
         <item itemvalue="Application.BaseTest" />
         <item itemvalue="Application.EmployeeMain" />
       </list>

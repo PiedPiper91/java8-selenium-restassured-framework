@@ -2,43 +2,48 @@ package config;
 
 import exceptions.ConfigurationException;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
 
-    private static Properties properties = new Properties();
+    private static final Properties PROPERTIES = new Properties();
 
     static {
         try {
-            FileInputStream fis = new FileInputStream("src/main/resources/config.properties");
-            properties.load(fis);
-        } catch (Exception e) {
-            try {
-                throw new ConfigurationException("Failed to load properties file");
-            } catch (ConfigurationException ex) {
-                throw new RuntimeException(ex);
+//            ConfigReader.class.getClassLoader().getResourceAsStream("config.properties");
+            try (FileInputStream fis = new FileInputStream("src/main/resources/config.properties")) {
+                PROPERTIES.load(fis);
             }
+        } catch (IOException e) {
+            throw new RuntimeException(
+                    new ConfigurationException(
+                            "Failed to load config.properties"
+                    )
+            );
         }
     }
 
     public static String getBrowser() {
-        return properties.getProperty("browser");
+        return PROPERTIES.getProperty("browser");
     }
 
     public static String getBaseUrl() {
-        return properties.getProperty("baseUrl");
+        return PROPERTIES.getProperty("baseUrl");
     }
 
     public static String getUsername() {
-        return properties.getProperty("username");
+        return PROPERTIES.getProperty("username");
     }
 
     public static String getPassword() {
-        return properties.getProperty("password");
+        return PROPERTIES.getProperty("password");
     }
 
-    public static String getTimeout() {
-        return properties.getProperty("timeout");
+    public static int getTimeout() {
+        return Integer.parseInt(
+                PROPERTIES.getProperty("timeout")
+        );
     }
 
 
