@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caae6dad-1825-43d6-ae61-06f58a21c5c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/TestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testdata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestDataRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ConfigReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/FrameworkConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDataRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDataRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +129,10 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
