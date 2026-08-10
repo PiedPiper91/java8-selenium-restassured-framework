@@ -1,16 +1,18 @@
 import com.fasterxml.jackson.core.JsonProcessingException;
+import exceptions.JsonParsingException;
 import models.TestData;
 import models.User;
 import utilities.JsonUtil;
+import utilities.LoggerUtil;
 
 import java.io.IOException;
 
 public class TestDataRunner {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, JsonParsingException {
         TestData testdatafromjson = JsonUtil.readTestData();
         testdatafromjson.getUsers().forEach(user -> {
-            System.out.println(user.getUsername());
-            System.out.println(user.getRole());
+            LoggerUtil.info(user.getUsername());
+            LoggerUtil.info(user.getRole());
         });
     }
 }

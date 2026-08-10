@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caae6dad-1825-43d6-ae61-06f58a21c5c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/LoggerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilities/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/JsonUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestDataRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDataRunner.java" afterDir="false" />
@@ -41,22 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BaseTest.executor": "Run",
-    "Application.EmployeeMain.executor": "Run",
-    "Application.TestDataRunner.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/AryaBhattacharya/IdeaProjects/java8-selenium-restassured-framework/src/test/java",
-    "onboarding.tips.debug.path": "C:/Users/arya_bhattacharya/Downloads/AutomationProjectsWorkspace/java8-selenium-restassured-framework/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EmployeeMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestDataRunner.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AryaBhattacharya/IdeaProjects/java8-selenium-restassured-framework/src/test/java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/arya_bhattacharya/Downloads/AutomationProjectsWorkspace/java8-selenium-restassured-framework/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AryaBhattacharya\IdeaProjects\java8-selenium-restassured-framework\src\test\java" />
@@ -67,8 +69,8 @@
       <recent name="C:\Users\AryaBhattacharya\IdeaProjects\java8-selenium-restassured-framework\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="models" />
       <recent name="exceptions" />
+      <recent name="models" />
       <recent name="com.automation.lms" />
       <recent name="EMS" />
       <recent name="employeemanagemenysystem" />
