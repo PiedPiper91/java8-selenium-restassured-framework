@@ -5,14 +5,15 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import static constants.FrameworkConstants.CONFIG_FILE;
+
 public class ConfigReader {
 
     private static final Properties PROPERTIES = new Properties();
 
     static {
         try {
-//            ConfigReader.class.getClassLoader().getResourceAsStream("config.properties");
-            try (FileInputStream fis = new FileInputStream("src/main/resources/config.properties")) {
+            try (FileInputStream fis = new FileInputStream("src/main/resources/"+CONFIG_FILE)) {
                 PROPERTIES.load(fis);
             }
         } catch (IOException e) {
