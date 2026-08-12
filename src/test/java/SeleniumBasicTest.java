@@ -1,7 +1,7 @@
+import driver.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.LoggerUtil;
 import java.time.Duration;
-
+import static config.ConfigReader.getBrowser;
 import static constants.FrameworkConstants.DEFAULT_TIMEOUT;
 
 public class SeleniumBasicTest {
@@ -19,10 +19,9 @@ public class SeleniumBasicTest {
 
     @BeforeMethod
     public void setup() {
-        if (driver == null) {
-            driver = new ChromeDriver();
+            DriverFactory driverFactory = new DriverFactory();
+            driver = driverFactory.createDriver(getBrowser());
             LoggerUtil.info("Browser launched");
-        }
     }
 
     @Test
@@ -37,15 +36,10 @@ public class SeleniumBasicTest {
         usernameInput.sendKeys("Admin");
         passwordInput.sendKeys("admin123");
         loginButton.click();
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        wait.until(ExpectedConditions.urlContains("dashboard"));
         String currentUrl = driver.getCurrentUrl();
         LoggerUtil.info("Current URL after login: " + currentUrl);
         Assert.assertTrue(currentUrl.contains("dashboard"),"Login failed. Expected dashboard URL but found: " + currentUrl);
-        driver.quit();
     }
 
     @AfterMethod
