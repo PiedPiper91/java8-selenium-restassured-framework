@@ -7,12 +7,13 @@ import java.time.format.DateTimeFormatter;
 
 public final class DateUtil {
 
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern(FrameworkConstants.DATE_TIME_FORMAT);
+
     private DateUtil() {
         throw new UnsupportedOperationException("Utility class cannot be instantiated");
     }
 
     public static String getCurrentDateTime() {
-        LocalDateTime now = LocalDateTime.now();
-        return now.format(DateTimeFormatter.ofPattern(FrameworkConstants.DATE_TIME_FORMAT));
+        return LocalDateTime.now().format(FORMATTER);
     }
 }

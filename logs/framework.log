@@ -2,3 +2,6 @@
 2026-08-10 13:35:46.335 [main] INFO  utilities.LoggerUtil - Admin
 2026-08-10 13:35:46.335 [main] INFO  utilities.LoggerUtil - User1
 2026-08-10 13:35:46.335 [main] INFO  utilities.LoggerUtil - ESS
+2026-08-12 13:17:12.450 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-12 13:17:15.383 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-12 13:17:15.383 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM

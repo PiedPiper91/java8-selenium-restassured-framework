@@ -3,6 +3,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.DateUtil;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class TestDateUtil {
 
     @Test
@@ -16,9 +19,10 @@ public class TestDateUtil {
         Assert.assertFalse(currentDateTime.isEmpty());
     }
     @Test
-    void testDateMatchesFormat(){
+    void testDateMatchesFormat() {
         String currentDateTime = DateUtil.getCurrentDateTime();
-        Assert.assertTrue(currentDateTime.matches(FrameworkConstants.DATE_TIME_FORMAT));
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(FrameworkConstants.DATE_TIME_FORMAT);
+        Assert.assertNotNull(LocalDateTime.parse(currentDateTime, formatter));
     }
 
 
