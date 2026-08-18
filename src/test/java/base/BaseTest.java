@@ -11,7 +11,7 @@ import static config.ConfigReader.getBrowser;
 
 public class BaseTest {
 
-    protected static WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeMethod
     public void setup() {
@@ -27,7 +27,4 @@ public class BaseTest {
         }
     }
 
-    public static WebDriver getDriver() {
-        return driver;
-    }
 }

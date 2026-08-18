@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caae6dad-1825-43d6-ae61-06f58a21c5c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/framework.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/framework.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageTitleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageTitleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumBasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumBasicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +74,11 @@
       <recent name="C:\Users\AryaBhattacharya\IdeaProjects\java8-selenium-restassured-framework\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
       <recent name="" />
       <recent name="utilities" />
       <recent name="exceptions" />
       <recent name="models" />
-      <recent name="com.automation.lms" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.TestDateUtil">

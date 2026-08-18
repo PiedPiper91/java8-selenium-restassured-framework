@@ -16,7 +16,6 @@ public class PageTitleTest extends BaseTest {
 
     @Test
     void testOrangeHRMLogin() {
-        driver = BaseTest.getDriver();
         driver.get(ConfigReader.getBaseUrl() + "/web/index.php/auth/login");
         LoggerUtil.info("Navigated to "+driver.getCurrentUrl());
         LoggerUtil.info("Page Title: "+driver.getTitle());
