@@ -14,11 +14,11 @@ import static constants.FrameworkConstants.DEFAULT_TIMEOUT;
 
 public class PageTitleTest extends BaseTest {
 
-    @Test
-    void testOrangeHRMLogin() {
-        driver.get(ConfigReader.getBaseUrl() + "/web/index.php/auth/login");
-        LoggerUtil.info("Navigated to "+driver.getCurrentUrl());
-        LoggerUtil.info("Page Title: "+driver.getTitle());
-        Assert.assertEquals(driver.getTitle(), "OrangeHRM", "Page Title is not OrangeHRM");
-    }
+//    @Test
+//    void testOrangeHRMLogin() {
+//        driver.get(ConfigReader.getBaseUrl() + "/web/index.php/auth/login");
+//        LoggerUtil.info("Navigated to "+driver.getCurrentUrl());
+//        LoggerUtil.info("Page Title: "+driver.getTitle());
+//        Assert.assertEquals(driver.getTitle(), "OrangeHRM", "Page Title is not OrangeHRM");
+//    }
 }

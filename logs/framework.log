@@ -48,3 +48,69 @@
 2026-08-18 16:35:26.308 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2026-08-18 16:35:26.312 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
 2026-08-18 16:35:30.121 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2026-08-19 18:05:43.517 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:05:46.342 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:05:46.348 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:05:47.438 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:05:49.845 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:05:49.851 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:05:52.099 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:05:53.098 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:05:56.122 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:05:56.126 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:05:57.345 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:05:58.331 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:06:00.798 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:06:00.804 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:06:03.480 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:08:04.877 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:08:07.194 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:08:07.200 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:08:08.189 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:08:10.806 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:08:10.811 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:08:12.393 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:08:13.400 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:08:16.053 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:08:16.058 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:08:16.728 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:08:17.835 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:08:20.175 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:08:20.182 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:08:21.675 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:09:35.227 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:09:37.938 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:09:37.944 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:09:39.584 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:09:40.603 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:09:43.144 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:09:43.150 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:09:46.370 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:09:47.355 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:09:49.798 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:09:49.802 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:09:51.277 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:11:44.053 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:11:46.952 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:11:46.957 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:11:50.207 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:11:51.209 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:11:54.028 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:11:54.035 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:11:57.725 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:11:58.659 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:12:00.972 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:12:00.976 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:12:03.646 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:12:24.745 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:12:27.117 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:12:27.122 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:12:29.789 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2026-08-19 18:12:30.750 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:12:33.185 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:12:33.191 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:12:36.336 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:12:37.356 [main] INFO  utilities.LoggerUtil - Browser launched
+2026-08-19 18:12:40.486 [main] INFO  utilities.LoggerUtil - Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-08-19 18:12:40.490 [main] INFO  utilities.LoggerUtil - Page Title: OrangeHRM
+2026-08-19 18:12:43.202 [main] INFO  utilities.LoggerUtil - Current URL after login: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login

@@ -1,14 +1,9 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {
-    private WebDriver driver;
-    private WebDriverWait wait;
     private By usernameInputLocator= By.name("username");
     private By passwordInputLocator = By.name("password");
     private By loginButtonLocator = By.xpath("//button[@type='submit' and contains(@class,'orangehrm-login-button')]");
